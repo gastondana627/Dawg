@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+     <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="loading-overlay">
+      <img src="./img/loading.gif" alt="Loading..."/>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Teacher Dashboard</div>
+        <button id="theme-toggle-button" class="theme-toggle-button">Toggle Theme</button>
+    </nav>
+  <div class="container">
+    <!-- Teacher Specific Content -->
+    <h2>Welcome Teacher</h2>
+    <p>This is the teacher dashboard. You can manage student progress, create new quizes, and update assignments</p>
+        <div class="chart-container">
+        <canvas id="student-engagement-bar"></canvas>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Top Student Highlights</h2>
+            <div id="top-student-highlights"></div>
+        </div>
+      <div class="card">
+        <h2 class="card-title">Peer Benchmarking</h2>
+          <div id="peer-benchmarking"></div>
+        </div>
+        <div class="chart-container">
+          <canvas id="yearly-growth-line"></canvas>
+      </div>
+  </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
