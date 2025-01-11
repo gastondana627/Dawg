@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+     <div id="loading-overlay">
+       <img src="./img/loading.gif" alt="Loading..."/>
+     </div>
+    <nav class="navbar">
+        <div class="logo">Student Dashboard</div>
+        <button id="theme-toggle-button" class="theme-toggle-button">Toggle Theme</button>
+    </nav>
+     <div class="container">
+      <div class="chart-container">
+        <canvas id="progress-timeline"></canvas>
+     </div>
+    <div class="card">
+      <div>
+         <h2 class="card-title">Quiz Summary</h2>
+           <div id="quiz-summary"></div>
+       </div>
+       <div>
+        <h2 class="card-title">Personalized Recommendations</h2>
+           <div id="personalized-recommendations"></div>
+       </div>
+   </div>
+  <div class="chart-container">
+    <canvas id="subject-engagement-pie"></canvas>
+  </div>
+    <div class="chart-container">
+      <canvas id="learning-hours-breakdown"></canvas>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Achievement Badges</h2>
+        <div id="achievement-badges"></div>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Student Leaderboard</h2>
+        <div id="student-leaderboard"></div>
+    </div>
+     <div class="card">
+      <h2 class="card-title">Learning Streaks</h2>
+        <div id="learning-streaks"></div>
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
